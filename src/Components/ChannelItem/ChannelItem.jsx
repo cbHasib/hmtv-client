@@ -1,11 +1,11 @@
 import React from "react";
 
 const ChannelItem = ({ channel, setHlsUrl, hlsUrl }) => {
-  console.log(hlsUrl);
-
   return (
     <button
-      onClick={() => setHlsUrl(channel.channel_link)}
+      onClick={() => {
+        setHlsUrl(channel.channel_link);
+      }}
       disabled={channel.channel_link === hlsUrl}
       title={channel.channel_link === hlsUrl ? "Playing" : "Play"}
       className={

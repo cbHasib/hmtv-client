@@ -37,7 +37,7 @@ const ChannelList = ({ setHlsUrl, hlsUrl }) => {
   };
 
   return (
-    <div className="flex flex-col gap-3 h-[430px] p-2 bg-gray-200 dark:bg-gray-800 overflow-y-scroll py-5 rounded-lg overflow-hidden">
+    <div className="flex flex-col gap-3 max-h-[485px] p-2 bg-gray-200 dark:bg-gray-800 overflow-y-scroll py-5 rounded-lg overflow-hidden w-full">
       {loading && (
         <div className="flex justify-center items-center h-full">
           <h2 className="text-lg font-medium text-gray-600 dark:text-gray-300">
