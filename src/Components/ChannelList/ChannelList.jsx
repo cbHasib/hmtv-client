@@ -37,11 +37,14 @@ const ChannelList = ({ setHlsUrl, hlsUrl }) => {
   };
 
   return (
-    <div className="flex flex-col gap-3 max-h-[485px] p-2 bg-gray-200 dark:bg-gray-800 overflow-y-scroll py-5 rounded-lg overflow-hidden w-full">
+    <div className="flex flex-col gap-3 lg:min-h-[485px] max-h-[490px] p-2 bg-gray-200 dark:bg-gray-800 overflow-y-scroll py-5 rounded-lg overflow-hidden w-full">
       {loading && (
         <div className="flex justify-center items-center h-full">
           <h2 className="text-lg font-medium text-gray-600 dark:text-gray-300">
-            Loading...
+            <span class="flex h-6 w-6 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-6 w-6 bg-sky-500"></span>
+            </span>
           </h2>
         </div>
       )}

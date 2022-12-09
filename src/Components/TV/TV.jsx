@@ -6,11 +6,10 @@ const TV = ({ hlsUrl }) => {
     <div>
       <ReactHlsPlayer
         loop={true}
-        width="100%"
-        height="auto"
         autoPlay={true}
         controls={true}
         src={hlsUrl}
+        className="lg:min-h-[485px] max-h-[490px] w-full h-full bg-black"
       />
     </div>
   );

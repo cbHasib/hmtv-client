@@ -21,9 +21,9 @@ function App() {
 
   return (
     <div className="dark">
-      <div className="bg-[#F8FAFC] dark:bg-[#0A1122] w-full lg:h-screen flex items-start lg:items-center justify-center p-5">
+      <div className="bg-[#F8FAFC] dark:bg-[#0A1122] w-full min-h-screen flex items-start lg:items-center justify-center p-5">
         <div className="lg:max-w-6xl w-full lg:w-[72rem] grid grid-cols-1 lg:grid-cols-4 gap-5">
-          <div className="rounded-xl border-gray-300 dark:border-gray-700 shadow-lg overflow-hidden lg:col-span-3 lg:order-last">
+          <div className="rounded-xl border-gray-300 dark:border-gray-700 shadow-lg overflow-hidden lg:col-span-3 lg:order-last lg:min-h-[485px] max-h-[490px]">
             <TV hlsUrl={hlsUrl} />
           </div>
           <ChannelList setHlsUrl={setHlsUrl} hlsUrl={hlsUrl} />
